@@ -74,41 +74,6 @@ document.addEventListener('DOMContentLoaded', () => {
             { q: "K-Means is an example of a supervised learning algorithm.", options: ["True", "False"], ans: 1 },
             { q: "Reinforcement learning involves an agent interacting with an environment.", options: ["True", "False"], ans: 0 },
             { q: "Splitting data into a training set and a testing set is standard practice in Machine Learning.", options: ["True", "False"], ans: 0 }
-        ],
-        dl: [
-            // 20 MCQs
-            { q: "What is Deep Learning?", options: ["A type of hardware", "A subset of Machine Learning based on artificial neural networks", "A database management system", "A web development framework"], ans: 1 },
-            { q: "What biological structure inspired the design of artificial neural networks?", options: ["The human heart", "The digestive system", "The human brain", "The nervous system of an insect"], ans: 2 },
-            { q: "What is the most basic building block of a neural network?", options: ["A matrix", "A node or neuron (perceptron)", "A central processing unit", "A decision tree"], ans: 1 },
-            { q: "What does the 'Deep' in Deep Learning refer to?", options: ["The complexity of the math", "The amount of data used", "The presence of multiple hidden layers in the network", "The deep thoughts of the AI"], ans: 2 },
-            { q: "Which layer in a neural network interacts directly with the incoming data?", options: ["Hidden layer", "Output layer", "Input layer", "Processing layer"], ans: 2 },
-            { q: "What is the purpose of an Activation Function?", options: ["To store data", "To introduce non-linearity into the network", "To connect to the internet", "To delete unused nodes"], ans: 1 },
-            { q: "Which of the following is a very common activation function?", options: ["ReLU (Rectified Linear Unit)", "HTML", "SQL", "Gradient Descent"], ans: 0 },
-            { q: "What is the role of a 'Loss Function'?", options: ["To randomly drop data", "To measure how far off the model's predictions are from the actual labels", "To speed up the computer", "To turn off the neural network"], ans: 1 },
-            { q: "What algorithm is used to adjust the weights in a neural network to minimize the loss?", options: ["K-Means", "Random Forest", "Backpropagation", "Linear Search"], ans: 2 },
-            { q: "What is 'Gradient Descent'?", options: ["A type of neural network", "An optimization algorithm used to minimize the loss function", "A way to visualize data", "A data cleaning technique"], ans: 1 },
-            { q: "What is an 'Epoch' in Deep Learning?", options: ["A single update to a weight", "One complete pass of the entire training dataset through the neural network", "A type of activation function", "The final prediction"], ans: 1 },
-            { q: "What does CNN stand for?", options: ["Computer Neural Network", "Convolutional Neural Network", "Calculated Node Network", "Complex Neural Node"], ans: 1 },
-            { q: "What are Convolutional Neural Networks (CNNs) most commonly used for?", options: ["Image recognition and processing", "Translating languages", "Sorting databases", "Predicting stock prices"], ans: 0 },
-            { q: "What does RNN stand for?", options: ["Random Neural Network", "Recurrent Neural Network", "Rapid Node Network", "Relational Neural Node"], ans: 1 },
-            { q: "What are Recurrent Neural Networks (RNNs) best suited for?", options: ["Image classification", "Sequential data like time series or natural language", "Basic arithmetic", "Generating random numbers"], ans: 1 },
-            { q: "Why are GPUs (Graphics Processing Units) heavily used in Deep Learning?", options: ["They make the code look better", "They are excellent at performing parallel matrix multiplications rapidly", "They use less electricity", "They are required by Python"], ans: 1 },
-            { q: "What are 'Weights' in a neural network?", options: ["The physical size of the computer", "Parameters that are adjusted during training to learn the data", "The number of layers in the network", "The speed of the algorithm"], ans: 1 },
-            { q: "What is a common technique used to prevent overfitting in deep neural networks?", options: ["Increasing the learning rate", "Dropout (randomly turning off some neurons during training)", "Using less data", "Removing the hidden layers"], ans: 1 },
-            { q: "What is 'Batch Size'?", options: ["The total size of the dataset", "The physical memory limit of the GPU", "The number of training examples processed in one iteration before updating weights", "The number of output categories"], ans: 2 },
-            { q: "Which of these is a popular open-source library for Deep Learning?", options: ["Pandas", "Django", "TensorFlow", "React"], ans: 2 },
-
-            // 10 True/False
-            { q: "Deep Learning is a subset of Machine Learning.", options: ["True", "False"], ans: 0 },
-            { q: "A neural network must have at least 100 hidden layers to function.", options: ["True", "False"], ans: 1 },
-            { q: "Backpropagation calculates errors starting from the output layer and moving backwards to the input layer.", options: ["True", "False"], ans: 0 },
-            { q: "Deep learning models generally require much more data to train effectively than traditional machine learning models.", options: ["True", "False"], ans: 0 },
-            { q: "The output layer of a neural network is responsible for providing the final prediction.", options: ["True", "False"], ans: 0 },
-            { q: "CNNs are primarily used for processing tabular data in spreadsheets.", options: ["True", "False"], ans: 1 },
-            { q: "Setting the learning rate extremely high will always make the network learn faster and better.", options: ["True", "False"], ans: 1 },
-            { q: "An epoch means the neural network has seen the entire training dataset one time.", options: ["True", "False"], ans: 0 },
-            { q: "Dropout is a technique used to purposefully make the neural network memorize the training data.", options: ["True", "False"], ans: 1 },
-            { q: "Data fed into a neural network usually needs to be converted into numbers (tensors or matrices) first.", options: ["True", "False"], ans: 0 }
         ]
     };
 
@@ -129,7 +94,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 4. Initialization
     if (subject === 'ml') titleEl.innerText = "Machine Learning";
-    else if (subject === 'dl') titleEl.innerText = "Deep Learning";
     else titleEl.innerText = "Python Basics";
 
     // SHUFFLE THE QUESTIONS HERE

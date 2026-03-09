@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     cards.forEach(card => {
         card.addEventListener('click', () => {
-            // Get the subject from the data attribute (python, ml, or dl)
+            // Get the subject from the data attribute (python, or ml)
             const subject = card.getAttribute('data-subject');
 
             // Visual feedback before redirecting
