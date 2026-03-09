@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Active Assessment</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+
+<body>
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+
+    <main class="quiz-container">
+        <header class="quiz-header">
+            <h1 id="quiz-title">Loading Assessment...</h1>
+            <div class="progress-info">
+                <div class="progress-tracker">Question <span id="current-q">1</span> of <span id="total-q">?</span>
+                </div>
+                <div class="score-tracker">Score: <span id="current-score">0</span></div>
+            </div>
+        </header>
+
+        <section id="question-box" class="glass-panel">
+            <div class="quiz-controls">
+                <button id="quit-btn" class="action-btn secondary-btn">Return to Dashboard</button>
+            </div>
+            <h2 id="question-text">Preparing your question...</h2>
+            <div id="options-container" class="options-grid">
+            </div>
+        </section>
+
+        <section id="result-box" class="glass-panel hidden">
+            <h2>Assessment Complete!</h2>
+            <p>Your final score is:</p>
+            <div class="score-display">
+                <span id="score">0</span> / <span id="total-score">0</span>
+            </div>
+            <button id="home-btn" class="action-btn">Return to Dashboard</button>
+        </section>
+    </main>
+
+    <script src="quiz.js"></script>
+</body>
+
+</html>
